@@ -1,7 +1,7 @@
 class Journal 
 {
     List<Entry> _entryList = new List<Entry>();
-        public void DisplayJournal()
+    public void DisplayJournal()
     {
 
         foreach (Entry entry in _entryList)
