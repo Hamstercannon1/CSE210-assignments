@@ -4,25 +4,20 @@ class Program
 {
     static void Main(string[] args)
     {
-        Job job1 = new Job();
-        job1._jobTitle = "Software engineer";
-        job1._company = "Microsoft";
-        job1._startYear = 2023;
-        job1._endYear = 2024;
+        Fraction fraction1 = new Fraction();
+        Console.WriteLine(fraction1.GetFractionString());
+        Console.WriteLine(fraction1.GetDecimalValue());
 
-        Job job2 = new Job();
-        job2._jobTitle = "Peasant";
-        job2._company = "France";
-        job2._startYear = 1413;
-        job2._endYear = 1417;
+        Fraction fraction2 = new Fraction(5);
+        Console.WriteLine(fraction2.GetFractionString());
+        Console.WriteLine(fraction2.GetDecimalValue());
 
-        Resume myResume = new Resume();
-        myResume._name = "Allison Rose";   
-        myResume._jobs.Add(job1);
-        myResume._jobs.Add(job2);
+        Fraction fraction3 = new Fraction(3,4);
+        Console.WriteLine(fraction3.GetFractionString());
+        Console.WriteLine(fraction3.GetDecimalValue());
 
-        myResume.displayJobDetails();
-
-
+        Fraction fraction4 = new Fraction(1,4);
+        Console.WriteLine(fraction4.GetFractionString());
+        Console.WriteLine(fraction4.GetDecimalValue());
     }
 }
